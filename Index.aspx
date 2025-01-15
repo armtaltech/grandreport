@@ -19,16 +19,9 @@
             <div class="container">
                 <div class="header__user">
                     <div class="header__user-btn" id="divuser" data-dropdown-btn="user">
+                        <a href="Pearson_correlation.aspx" class="tooltips"><i class="fa fa-line-chart" aria-hidden="true">&nbsp;&nbsp;Pearson Correlation</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="Pearson_correlation.aspx" class="tooltips"><i class="fa fa-area-chart" aria-hidden="true">&nbsp;&nbsp;Regression</i></a>
                     </div>
-
-                    <nav class="dropdown dropdown--design-01" data-dropdown-list="user">
-                        <div>
-                            <div class="dropdown__icons">
-                                <a href="dashboard.aspx" class="tooltips"><i class="fa fa-dashboard"></i><span class="tooltiptext">Dashboard</span></a>
-                                <a href="login.aspx" class="tooltips"><i class="icon-Logout"></i><span class="tooltiptext">Logout</span></a>
-                            </div>
-                        </div>
-                    </nav>
                 </div>
             </div>
         </div>
@@ -46,7 +39,7 @@
                                     <label class="create__label" for="category">Select Source</label>
                                 </div>
                                 <div class="col-md-4">
-                                    <select id="Select1" onchange="selectionchange()">
+                                    <select id="Select1" onchange="selectionchange(1)">
                                         <option>Select</option>
                                         <option>Oracle</option>
                                         <%--<option>SQL Server</option>--%>
@@ -173,21 +166,52 @@
                         <div id="div_Headlist" class="col-md-6 hide">
                         </div>
                         <div id="div_reff" class="col-md-6 hide">
-                            <ul id="ulHeadList" class="list" style="float: right;text-align: left;">  
-                                <li style="padding: 2% 0;"> <span><label class="th_blue" >&nbsp;&nbsp;&nbsp;&nbsp; </label></span><span>&nbsp;&nbsp;Further measures</span></li> 
-                                <li style="padding: 2% 0;"> <span><label class="th_green" >&nbsp;&nbsp;&nbsp;&nbsp;</label></span><span>&nbsp;&nbsp;Target / principal measure</span></li> 
-                                <li style="padding: 2% 0;"> <span><label class="th_red" >&nbsp;&nbsp;&nbsp;&nbsp;</label></span><span>&nbsp;&nbsp;Influencing factors</span></li> 
-                            </ul>                            
+                            <ul id="ulHeadList" class="list" style="float: right; text-align: left;">
+                                <li style="padding: 2% 0;"><span>
+                                    <label class="th_blue">&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                                </span><span>&nbsp;&nbsp;Further measures</span></li>
+                                <li style="padding: 2% 0;"><span>
+                                    <label class="th_green">&nbsp;&nbsp;&nbsp;&nbsp;</label></span><span>&nbsp;&nbsp;Target / principal measure</span></li>
+                                <li style="padding: 2% 0;"><span>
+                                    <label class="th_red">&nbsp;&nbsp;&nbsp;&nbsp;</label></span><span>&nbsp;&nbsp;Influencing factors</span></li>
+                            </ul>
                         </div>
                     </div>
 
+                    <%--<div id="div_ReportReg" class="col-md-12">
+                       
+                    </div>--%>
+
                     <div id="div_Report" class="col-md-12">
-                        <%--<asp:GridView ID="GridView1" runat="server"></asp:GridView>--%>
+                       
                     </div>
                 </div>
             </form>
         </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-12">
+                    <h6 class="tooltips"><a href="Index.aspx" class="tooltips">Information Systems Group,</a>&nbsp;&nbsp;
+                        <a href="https://taltech.ee/" class="tooltips">Tallinn University of Technology</a>
+                    </h6>
+
+                    <p>
+                        <a href="Pearson_correlation.aspx" class="tooltips"><i class="fa fa-line-chart" aria-hidden="true">&nbsp;&nbsp;Pearson Correlation</i></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="Pearson_correlation.aspx" class="tooltips"><i class="fa fa-area-chart" aria-hidden="true">&nbsp;&nbsp;Regression</i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <div class="col-lg-12 hover hide" id="divhover">
         <div class="hoverdiv" style="">
             <div class="loader"></div>
